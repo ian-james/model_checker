@@ -1,0 +1,11 @@
+
+1) ModelFactory builds the model with specific settings
+2) Load a dataset
+3) Build a set of Metrics
+4) Build a Test
+5) Build an Evaluation
+6) Evaluate the Evaluation
+7) Visualization
+
+8) Comparator
+    

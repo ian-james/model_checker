@@ -1,0 +1,17 @@
+# Environment Directories
+venv/*
+__pycache__/
+
+# Dev environment
+.vscode
+
+# Files Types
+*.pyc
+*.pyo
+
+# Tests
+.pytest_cache
+
+# Logs
+*.log
+
