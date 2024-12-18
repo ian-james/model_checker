@@ -1,3 +1,4 @@
+""" Unit tests for the Metadata class. """
 import unittest
 from datetime import datetime
 from src.components.meta_data import MetaData
@@ -62,7 +63,8 @@ class TestMetadata(unittest.TestCase):
         """
         Test the string representation of the Metadata instance.
         """
-        expected_repr = "<Metadata(name=TestResource, version=1.0, uri=http://example.com/resource)>"
+        expected_repr = "<Metadata(name=TestResource, version=1.0, " \
+                        "uri=http://example.com/resource)>"
         self.assertEqual(repr(self.metadata), expected_repr)
 
 
