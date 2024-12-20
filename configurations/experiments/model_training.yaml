@@ -1,0 +1,22 @@
+# model_training.yaml
+
+name: "model_training"
+phase: "training"
+
+model:
+  name: "test_model"
+  type: "classification"
+  pretrained: true
+
+training:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss_function: "cross_entropy"
+
+metrics:
+  - name: "accuracy"
+    type: "classification"
+  - name: "f1_score"
+    type: "classification"

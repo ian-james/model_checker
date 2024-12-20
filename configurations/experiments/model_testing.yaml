@@ -1,0 +1,19 @@
+# model_testing.yaml
+
+name: "model_testing"
+phase: "testing"
+
+model:
+  name: "test_model"
+  type: "classification"
+  pretrained: true
+
+testing:
+  num_workers: 4
+  batch_size: 32
+
+metrics:
+  - name: "accuracy"
+    type: "classification"
+  - name: "f1_score"
+    type: "classification"

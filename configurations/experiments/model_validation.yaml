@@ -1,0 +1,21 @@
+# model_validation.yaml
+# This configuration is an example, it will be set to the most common case.
+# Specific versions of this configuration will be created for each experiment. 
+
+name: "model_validation"
+phase: "validation"
+
+validation:
+  batch_size: 32
+  frequency: 1
+  early_stopping:
+    patience: 5
+    metric: "accuracy"
+    mode: "max"
+    delta: 0.001
+
+metrics:
+  - name: "accuracy"
+    type: "classification"
+  - name: "f1_score"
+    type: "classification"
