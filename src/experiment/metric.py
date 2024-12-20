@@ -16,7 +16,7 @@ class Metric:
         self.name = name
         self.value = value
         self.description = description
- 
+
     def __repr__(self) -> str:
         """
         Return a string representation of the Metric object.

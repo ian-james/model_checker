@@ -1,15 +1,16 @@
 """ This Class abstracts the handling of data for the model."""
-from dataset_info import DatasetInfo
+from src.components.dataset_info import DatasetInfo
 
-""" This class contains metadata about a dataset. """
 class DataHandler:
     """
-    Contains Dataset information.
+    DataHandler for interfacing with different types of data.
     """
     def __init__(self, dataset_info: DatasetInfo):
         self.dataset_info = dataset_info
         self.data = None
         self.target = None
+        self.type = "csv"
+        self.name = "default-datahandler"
 
     def load_data(self):
         """
@@ -18,7 +19,6 @@ class DataHandler:
         Args:
             file_path (str): Path to the file containing the data.
         """
-        pass
 
     def save_data(self, file_path: str):
         """
@@ -27,7 +27,6 @@ class DataHandler:
         Args:
             file_path (str): Path to the file where the data will be saved.
         """
-        pass
 
     def get_data_summary(self):
         """
@@ -36,4 +35,8 @@ class DataHandler:
         Returns:
             dict: A dictionary containing metadata about the data.
         """
-        pass
+        return {
+            'name': self.name,
+            'type': self.type,
+            'dataset_info': self.dataset_info.to_dict(),
+        }

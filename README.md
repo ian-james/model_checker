@@ -11,12 +11,18 @@ Compare the quality of two models
     -created
     -last_updated
 
+# Timing
+  - Time Started
+  - Time Finished
+
+# Parameters
+
 ## ModelWrapper
 - name
-- version
-- uri
-- last_updated
-- tags
+- short_name
+- model
+- comment
+
 
 ## ModelFactory
 
@@ -43,6 +49,14 @@ Compare the quality of two models
 
 ## MetricEngine
     - Produce Metrics Sets
+
+    - Example 
+    - TestName
+    - Phase
+    - Data
+    - Result
+
+    ex){ name="Test1", phase="train", test_params={'cross-validation'}, result={'accuracy'=0.8}
 
 ## Evaluator
     - Evaluates the Set of Metrics on the dataset

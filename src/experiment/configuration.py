@@ -55,7 +55,7 @@ class Configuration:
         if not new_config:
             print(f"Configuration file not found: {file_path}")
             return
-    
+
         self.add_config(new_config)
 
     def check_duplicate_keys(self, new_config: Dict) -> bool:
@@ -119,4 +119,3 @@ class Configuration:
             str: A string representation of the Configuration object.
         """
         return f"Configuration(config_file={self.config_file}, config={self.config})"
-

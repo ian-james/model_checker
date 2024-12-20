@@ -1,3 +1,4 @@
+""" This module contains the MetaData class. """
 from typing import List, Optional
 from datetime import datetime
 
